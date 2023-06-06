@@ -1,7 +1,6 @@
 # Frontend Mentor - Results summary component solution
 
 This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -19,6 +18,9 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
+
+This solution was developed while viewing Kevin Powell's video solution for the project in order to refine my own development process, learn some modern best practice techniques, and generally sharpen my CSS skills. My solution is heavily influenced by Kevin's finished product and should be viewed as such.
+
 
 ### The challenge
 
