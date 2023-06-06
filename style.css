@@ -6,6 +6,7 @@
        format('truetype');
 }
 
+/* Custom property names and values taken directly from K Powell's play through and FEM design specs */
 :root {
   --clr-primary-hsl-400: 252, 100%, 67%;
   --clr-primary-hsl-500: 256, 72%, 46%;
