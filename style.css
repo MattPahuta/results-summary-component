@@ -47,17 +47,18 @@
   --fw-bold: 700;
   --fw-black: 800;
   /* Font Sizes */
-  --fs-400: 1.125rem;
-  --fs-500: 1.25rem;
+  --fs-400: 1rem;
+  --fs-500: 1.125rem;
   --fs-600: 1.5rem;
-  --fs-700: 1.75rem;
-  --fs-800:  3.5rem;
+  --fs-800: 3.5rem;
 }
 
 @media (min-width: 40rem) {
   :root {
-    --fs-700: 
-    --fs-800:  4.5rem;   
+    --fs-400: 1.125rem;
+    --fs-500: 1.5rem;
+    --fs-600: 2rem;
+    --fs-800: 4.5rem;   
   }
 }
 
@@ -106,11 +107,13 @@ body {
 
 .section-title {
   font-weight: var(--fw-bold);
-  font-size: var(--fs-600);
+  font-size: var(--fs-500);
 }
 
 .button {
   color: var(--clr-neutral-100);
+  font-size: 1.125rem;
+  font-weight: var(--fw-bold);
   line-height: 1;
   background: var(--clr-neutral-700);
   padding: 1rem 2rem;
@@ -136,8 +139,10 @@ body {
   color: hsl(var(--clr-neutral-hsl-100), .7);
   text-align: center;
   /* use calc here with padding value to increase padding for left/right */
-  padding: 
-    var(--padding) calc(var(--padding) * 1.5);
+  /* padding: 
+    var(--padding) calc(var(--padding) * 1.6); */
+
+  padding: 1.5rem 3.5rem 2.5rem;
   background: var(--gradient-primary);
   border-radius: 
     0 0 var(--border-radius) var(--border-radius);
@@ -161,7 +166,7 @@ body {
 .result-score span {
   /* make the span a block element to have its own line */
   display: block;
-  font-size: var(--fs-900);
+  font-size: var(--fs-800);
   font-weight: var(--fw-black);
   line-height: 1;
   color: var(--clr-neutral-100);
@@ -215,7 +220,7 @@ body {
   color: var(--clr-neutral-700);
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 37.5rem) {
   /* center component on screen at larger screen sizes */
   body {
     min-height: 100vh;
@@ -231,6 +236,9 @@ body {
     box-shadow: .5rem 1rem 3rem hsl(var(--clr-neutral-hsl-700), .2);
   }
   .results {
+    /* padding: 1.5rem 3.5rem 2.5rem; */
+    /* padding: 2.5rem 3.5rem 3.5rem; */
+    padding: var(--padding);
     border-radius: var(--border-radius);
   }
 }
