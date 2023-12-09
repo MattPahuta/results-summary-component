@@ -202,16 +202,16 @@ body {
 }
 
 /* assign proper color to --item-color variable */
-.summary-item[data-item-type="accent-1"] {
+.summary-item[data-category="reaction"] {
   --item-color: var(--clr-accent-1);
 }
-.summary-item[data-item-type="accent-2"] {
+.summary-item[data-category="memory"] {
   --item-color: var(--clr-accent-2);
 }
-.summary-item[data-item-type="accent-3"] {
+.summary-item[data-category="verbal"] {
   --item-color: var(--clr-accent-3);
 }
-.summary-item[data-item-type="accent-4"] {
+.summary-item[data-category="visual"] {
   --item-color: var(--clr-accent-4);
 }
 
