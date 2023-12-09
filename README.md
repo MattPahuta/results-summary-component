@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [FEM Solution URL](https://www.frontendmentor.io/solutions/responsive-results-component-using-css-grid-and-flexbox-wFhpkVIERP)
+- [Live Site URL](https://results-summary-component-omega-two.vercel.app/)
 
 ## My process
 
@@ -52,19 +52,30 @@ Users should be able to:
 
 ### What I learned
 
-Definitely could have achieved the same results using classes to target these elements, but using the data attributes to apply the proper styles (in this case, switching the --item-color property) was an interesting technique pulled directly from Kevin Powell's video walkthrough. Certainly seemed like an efficient approach for this particular series of elements.
+Definitely could have achieved the same results using classes to target these elements, but using the data attributes to apply the proper styles (in this case, switching the --item-color property) and utilizing the hsl function to apply the proper opacity was an interesting technique pulled directly from Kevin Powell's video walkthrough (though I made a different choice with the data attribute naming convention). Certainly seemed like an efficient approach for this particular series of elements and something I'll look to apply to future projects.
 
 ```css
-.summary-item[data-item-type="accent-1"] {
+/* Styles for individual summary item (result detail w/svg) */
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: .5rem;
+  background-color: hsl(var(--item-color), .1);
+}
+
+/* assign proper color to --item-color variable */
+.summary-item[data-category="reaction"] {
   --item-color: var(--clr-accent-1);
 }
-.summary-item[data-item-type="accent-2"] {
+.summary-item[data-category="memory"] {
   --item-color: var(--clr-accent-2);
 }
-.summary-item[data-item-type="accent-3"] {
+.summary-item[data-category="verbal"] {
   --item-color: var(--clr-accent-3);
 }
-.summary-item[data-item-type="accent-4"] {
+.summary-item[data-category="visual"] {
   --item-color: var(--clr-accent-4);
 }
 ```
@@ -82,4 +93,4 @@ Definitely could have achieved the same results using classes to target these el
 
 ## Acknowledgments
 
-A huge Thank you to Kevin Powell for continuing to produce exceptional tutorials, learning resources, and full courses. 
+A big Thank you to Kevin Powell for continuing to produce exceptional tutorials, learning resources, and full courses. 
